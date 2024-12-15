@@ -1,1 +1,1 @@
-web: gunicorn app_development/visualization:app.server
+web: gunicorn app_greenvest:app.server
