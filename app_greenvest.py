@@ -15,7 +15,7 @@ import plotly.validator_cache # need to solve circular dependency
 import pandas as pd
 import yfinance as yf
 
-import plotly.io as pio
+#import plotly.io as pio
 
 #pio.renderers.default = "browser"
 
