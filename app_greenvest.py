@@ -3,9 +3,7 @@ import os
 import re
 
 import dash
-#import dash_core_components as dcc
 from dash import dcc
-#import dash_html_components as html
 from dash import html
 from dash.dependencies import Input, Output
 from dash_html_components import Label
@@ -18,11 +16,8 @@ import pandas as pd
 import yfinance as yf
 
 import plotly.io as pio
-from IPython.display import display
 
-pio.renderers.default = "browser"
-
-external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+#pio.renderers.default = "browser"
 
 
 # --------------------------------------------------------
@@ -55,11 +50,10 @@ facility_company_year_data = pd.read_csv('data/facility_company_year.csv')
 # --------------------------------------------------------
 # Basic Dash App Info
 # --------------------------------------------------------
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets, suppress_callback_exceptions=True)
 app.title = 'GreenVest'
 server = app.server
-suppress_callback_exceptions=True
-logo_src = os.getcwd() + '/logo/greenvest_logo.png'
 
 
 # --------------------------------------------------------
