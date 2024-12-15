@@ -1,1 +1,1 @@
-web: gunicorn app_greenvest:app.server
+web: gunicorn app_greenvest:server
