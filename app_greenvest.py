@@ -6,12 +6,10 @@ import dash
 from dash import dcc
 from dash import html
 from dash.dependencies import Input, Output
-from dash_html_components import Label
-#from dash_html_components.Div import Div
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
-import plotly.validator_cache # need to solve circular dependency
+#import plotly.validator_cache # need to solve circular dependency
 import pandas as pd
 import yfinance as yf
 
